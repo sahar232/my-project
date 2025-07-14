@@ -1,0 +1,108 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff0f6;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.page {
+  display: none;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.active {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input-box {
+  margin: 20px 0;
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  background-color: #f06262;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 8px 16px rgba(68, 6, 26, 0.6);
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #6c0e2e;
+  transform: scale(1.05);
+}
+
+.heart {
+  font-size: 60px;
+  color: #711031;
+  animation: pulse 1.5s infinite;
+  margin: 20px 0;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+h1 {
+  color: #760e34;
+  margin: 20px 0;
+}
+
+#loveText {
+  font-size: 20px;
+  color: #880e4f;
+  min-height: 50px;
+  margin: 20px auto;
+}
+
+.sticker {
+  position: absolute;
+  width: 50px;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  0% { top: -60px; opacity: 0; transform: rotate(0deg); }
+  50% { opacity: 1; }
+  100% { top: 100%; transform: rotate(360deg); opacity: 0; }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
